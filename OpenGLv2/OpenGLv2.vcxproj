@@ -90,7 +90,14 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Admin\Desktop\yusuf\GameEngine\Dependencies\eigen-master\eigen-master;C:\Users\Admin\Desktop\yusuf\GameEngine\Dependencies\glew-2.2.0-win32\glew-2.2.0\include;C:\Users\Admin\Desktop\yusuf\GameEngine\Dependencies\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\Admin\Desktop\yusuf\GameEngine\Dependencies\GLFW\lib-vc2019;C:\Users\Admin\Desktop\yusuf\GameEngine\Dependencies\glew-2.2.0-win32\glew-2.2.0\lib\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib
+;glew32.lib;opengl32.lib
+;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
